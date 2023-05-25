@@ -24,6 +24,9 @@ ul {
   padding: 0;
   margin: 0;
 }
+img {
+  display: block;
+}
 .container {
   max-width: 1158px;
   margin: 0 auto;
@@ -47,11 +50,13 @@ ul {
 .list {
   list-style: none;
 }
+.header__logo {
+  margin-right: 76px;
+}
 .logo__header-element {
   color: #2e2f42;
 }
 .header {
-  padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
 .header__inner {
@@ -63,12 +68,15 @@ ul {
   align-items: center;
 }
 .header__menu-list {
-  margin-left: 76px;
   display: flex;
   align-items: center;
+  gap: 40px;
 }
-.header__menu-item:not(:last-child) {
-  margin-right: 40px;
+.header__menu-list:last-child {
+  margin-right: 0;
+}
+.header__menu-item {
+  padding: 24px;
 }
 .header__menu-link {
   font-weight: 500;
@@ -86,10 +94,10 @@ ul {
 .header__contact-list {
   display: flex;
   align-items: center;
-  margin-left: 332px;
+  gap: 40px;
 }
-.header_contact-item:not(:last-child) {
-  margin-right: 40px;
+.header_contact-item:last-child {
+  margin-right: 0;
 }
 .header__contact-link {
   color: #434455;
@@ -101,8 +109,8 @@ ul {
   color: #404bbf;
 }
 .solutions {
+  padding: 188px 0;
   background-color: #2e2f42;
-  text-align: center;
 }
 .solutions__title {
   color: #fff;
@@ -111,7 +119,7 @@ ul {
   line-height: 107%;
   text-align: center;
   letter-spacing: 0.02em;
-  padding: 68px 0 48px 0;
+  max-width: 496px;
 }
 .solution__btn {
   font-family: "Roboto", sans-serif;
@@ -123,14 +131,19 @@ ul {
   font-weight: 500;
   letter-spacing: 0.04em;
   border: none;
+  display: block;
+  min-width: 169px;
+  height: 56px;
   border-radius: 4px;
-  padding: 16px 32px;
 }
 .solution__btn:hover {
   background-color: #404bbf;
 }
 .solution__btn:focus {
   background-color: #404bbf;
+}
+.details {
+  padding: 120px 0;
 }
 .details__menu-title {
   font-weight: 500;
@@ -142,9 +155,10 @@ ul {
 .details__menu-list {
   display: flex;
   align-items: center;
+  gap: 24px;
 }
-.details__menu-item:not(:last-child) {
-  margin-right: 24px;
+.details__menu-list:last-child {
+  margin-right: 0;
 }
 .about__title,
 .team__title {

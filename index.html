@@ -10,7 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>WebStudio</title>
   </head>
@@ -19,7 +22,7 @@
       <div class="container">
         <div class="header__inner">
           <nav class="header__menu">
-            <a class="logo link" href="./index.html"
+            <a class="logo link header__logo" href="./index.html"
               >Web<span class="logo__header-element">Studio</span></a
             >
             <ul class="header__menu-list list">
@@ -56,15 +59,17 @@
       </div>
     </header>
     <main class="main">
-      <section class="solutions section">
-        <h1 class="solutions__title">
-          Effective Solutions <br />
-          for Your Business
-        </h1>
-        <button class="solution__btn" type="button">Order Service</button>
+      <section class="solutions">
+        <div class="container">
+          <h1 class="solutions__title">
+            Effective Solutions for Your Business
+          </h1>
+          <button class="solution__btn" type="button">Order Service</button>
+        </div>
       </section>
-      <div class="container">
-        <section class="details section">
+
+      <section class="details">
+        <div class="container">
           <h2 class="details__title" hidden>details</h2>
           <ul class="details__menu-list list">
             <li class="details__menu-item">
@@ -96,8 +101,10 @@
               </p>
             </li>
           </ul>
-        </section>
-        <section class="about section">
+        </div>
+      </section>
+      <section class="about section">
+        <div class="container">
           <h2 class="about__title">What are we doing</h2>
           <ul class="about__images-list list">
             <li class="about__images-item">
@@ -125,8 +132,8 @@
               />
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
       <section class="team section">
         <div class="container">
           <h2 class="team__title">Our Team</h2>
