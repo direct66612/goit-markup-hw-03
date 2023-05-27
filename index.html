@@ -19,43 +19,41 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <nav class="header__menu">
-            <a class="logo link header__logo" href="./index.html"
-              >Web<span class="logo__header-element">Studio</span></a
-            >
-            <ul class="header__menu-list list">
-              <li class="header__menu-item">
-                <a class="header__menu-link link" href="./index.html">Studio</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link link" href="./portfolio.html"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link link" href="">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-          <address class="header__address">
-            <ul class="header__contact-list list">
-              <li class="header_contact-item">
-                <a
-                  class="header__contact-link link"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="header_contact-item">
-                <a class="header__contact-link link" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
+      <div class="header__inner container">
+        <nav class="header__menu">
+          <a class="logo link header__logo" href="./index.html"
+            >Web<span class="logo__header-element">Studio</span></a
+          >
+          <ul class="header__menu-list list">
+            <li class="header__menu-item">
+              <a class="header__menu-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="header__address">
+          <ul class="header__contact-list list">
+            <li class="header_contact-item">
+              <a
+                class="header__contact-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="header_contact-item">
+              <a class="header__contact-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
     </header>
     <main class="main">
@@ -103,7 +101,7 @@
           </ul>
         </div>
       </section>
-      <section class="about section">
+      <section class="about">
         <div class="container">
           <h2 class="about__title">What are we doing</h2>
           <ul class="about__images-list list">
@@ -134,7 +132,7 @@
           </ul>
         </div>
       </section>
-      <section class="team section">
+      <section class="team">
         <div class="container">
           <h2 class="team__title">Our Team</h2>
           <ul class="team__images-list list">
@@ -145,8 +143,10 @@
                 class="team__images-img"
                 width="264"
               />
-              <h3 class="team__images-title">Mark Guerrero</h3>
-              <p class="team__images-text">Product Designer</p>
+              <div class="team__images-box">
+                <h3 class="team__images-title">Mark Guerrero</h3>
+                <p class="team__images-text">Product Designer</p>
+              </div>
             </li>
             <li class="team__images-item">
               <img
@@ -155,8 +155,10 @@
                 class="team__images-img"
                 width="264"
               />
-              <h3 class="team__images-title">Tom Ford</h3>
-              <p class="team__images-text">Frontend Developer</p>
+              <div class="team__images-box">
+                <h3 class="team__images-title">Tom Ford</h3>
+                <p class="team__images-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="team__images-item">
               <img
@@ -165,8 +167,10 @@
                 class="team__images-img"
                 width="264"
               />
-              <h3 class="team__images-title">Camila Garcia</h3>
-              <p class="team__images-text">Marketing</p>
+              <div class="team__images-box">
+                <h3 class="team__images-title">Camila Garcia</h3>
+                <p class="team__images-text">Marketing</p>
+              </div>
             </li>
             <li class="team__images-item">
               <img
@@ -175,8 +179,10 @@
                 class="team__images-img"
                 width="264"
               />
-              <h3 class="team__images-title">Daniel Wilson</h3>
-              <p class="team__images-text">UI Designer</p>
+              <div class="team__images-box">
+                <h3 class="team__images-title">Daniel Wilson</h3>
+                <p class="team__images-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -184,7 +190,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="logo link" href="./index.html"
+        <a class="logo footer__logo link" href="./index.html"
           >Web<span class="logo__footer-element">Studio</span></a
         >
         <p class="footer__text">
