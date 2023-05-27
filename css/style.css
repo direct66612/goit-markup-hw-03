@@ -49,7 +49,16 @@ img {
   list-style: none;
 }
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .header__logo {
   margin-right: 76px;
@@ -76,8 +85,9 @@ img {
 .header__menu-list:last-child {
   margin-right: 0;
 }
-.header__menu-item {
+.header__menu-link {
   padding: 24px 0;
+  display: block;
 }
 .header__menu-link {
   font-weight: 500;
